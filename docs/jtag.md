@@ -36,6 +36,10 @@ PC ──USB── AE-FT232HL ──3.3V── AE-LCNV4-MOSFET ──1.8V── 
   - JP4: 3.3V出力をVCCIOに供給し、I/Oを3.3Vにする。
 - 電源はUSBバスパワーだけでよい。
 - FT232HのMPSSEでは、JTAGのピンが次のように固定されている: AD0 = TCK、AD1 = TDI、AD2 = TDO、AD3 = TMS。
+- **MPSSEのための事前設定(FT_ProgでのEEPROM書き換えなど)は不要。** 出荷時の状態のまま使える。
+  - openFPGALoaderは接続のたびに、ソフト側でFT232HをMPSSEモードに切り替える(`ftdi_set_bitmode` で `BITMODE_MPSSE` を設定)。
+  - `-c ft232` は、FT232Hの標準のVID/PID `0403:6014` で探す。
+  - EEPROMでVID/PIDを書き換えた個体は見つからなくなるので、書き換えないこと。
 
 ### 配線表
 
