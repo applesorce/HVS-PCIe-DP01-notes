@@ -1,6 +1,6 @@
-# K7-160T-DP ボード概要
+# HVS PCIe-DP01 (K7-160T-DP) ボード概要
 
-シルク表記は「HVS / HYVISION SYSTEM」「REV.C」。Kintex-7を載せた基板で、公式のSDKやサンプルはほぼ無い。
+ボード名は **HVS PCIe-DP01**(HYVISION SYSTEM製)。シルク表記は「HVS / HYVISION SYSTEM」「REV.C」。Kintex-7を載せた基板で、公式のSDKやサンプルはほぼ無い。このリポジトリでは「K7-160T-DP」と呼んでいる。
 
 ## 主要部品
 

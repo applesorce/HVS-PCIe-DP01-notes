@@ -1,6 +1,7 @@
-# K7-160T-DP
+# HVS PCIe-DP01 (K7-160T-DP) board notes
 
-Kintex-7 **XC7K160T-FFG676-1** を載せたFPGAボード「K7-160T-DP」(シルク表記: HVS / HYVISION SYSTEM REV.C)の非公式資料集。
+HYVISION SYSTEM製のFPGAボード **HVS PCIe-DP01**(Kintex-7 **XC7K160T-FFG676-1** 搭載、基板リビジョン REV.C)の非公式資料集。
+このリポジトリと関連リポジトリでは、このボードを「K7-160T-DP」と呼んでいる。
 公式のSDKやドキュメントがほぼ無い基板について、実機で確認したピン配置・電圧・DDR3の動かし方をまとめている。
 
 ## 動作確認済みの内容
