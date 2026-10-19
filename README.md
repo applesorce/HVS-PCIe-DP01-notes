@@ -30,7 +30,9 @@ HYVISION SYSTEM製のFPGAボード **HVS PCIe-DP01**(Kintex-7 **XC7K160T-FFG676-
 
 ## 最初に知っておくべきこと
 
-- **電源**: J4に12V(左が12V、右がGND)。
+- **電源は12V。** 供給方法は2通り([docs/board.md](docs/board.md#電源))。
+  - コネクタJ4から供給する。相手側はMolex 2.5mmピッチのプリント基板用コネクタのハウジング 02P(5264-02)。左が12V、右がGND。
+  - マイニング用のPCIeライザーにボードを挿して、PCIeスロットから供給する。
 - **JTAGのVREFは1.8V系**(実測約1.9V)。3.3V専用の書き込み器を直結しないこと。コネクタはディップスイッチ側から TMS, TDI, TDO, TCK, GND, VREF の順([docs/jtag.md](docs/jtag.md))。
 - **DDR3はDCIなしの `SSTL15`。** ベンダー資料にある `SSTL15_T_DCI` は誤りで、そのまま使うとキャリブレーションが全滅する。
 - **Bank 32 (TP55–58) はHPバンク**で、最大1.8V。3.3Vの信号をつながないこと。
