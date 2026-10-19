@@ -1,0 +1,10 @@
+mig/vivado/build/
+mig/vivado/.Xil/
+mig/fw/*.elf
+*.jou
+*.log
+examples/openxc7-led/openXC7.mk
+examples/openxc7-led/*.json
+examples/openxc7-led/*.fasm
+examples/openxc7-led/*.frames
+examples/openxc7-led/*.bit
